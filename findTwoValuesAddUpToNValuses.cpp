@@ -1,4 +1,4 @@
-#include "FindTwoValuesAddUpToNValuses.h"
+#include "findTwoValuesAddUpToNValuses.h"
 
 std::pair<size_t, size_t> FindTwoValuesAddUpToNValuses::findTwoValues(std::vector<size_t>& array_sorted, const size_t value_sum) {
 
