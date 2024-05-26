@@ -2,9 +2,7 @@
 
 std::pair<size_t, size_t> FindTwoValuesAddUpToNValuses::findTwoValues(std::vector<size_t>& array_sorted, const size_t value_sum) {
 
-    if (array_sorted.empty() || array_sorted.size() < 2 || !std::is_sorted(array_sorted.begin(), array_sorted.end())) 
-
-                                                                                                  return this->m_pair_result;
+    if (array_sorted.size() < 2 || !std::is_sorted(array_sorted.begin(), array_sorted.end())) return this->m_pair_result;
 
     auto lower_bound_iter = std::lower_bound(array_sorted.begin(), array_sorted.end(), value_sum);
 
@@ -117,7 +115,6 @@ void FindTwoValuesAddUpToNValuses::searchingForValuesViaThreads(std::vector<size
 
 void FindTwoValuesAddUpToNValuses::separateBranchFind(std::vector<size_t>& array_sorted,
                                                       const size_t value_find, const size_t distance) {
-
 
     size_t result_sum = 0;
     size_t temp_index = this->m_s_start_value;
